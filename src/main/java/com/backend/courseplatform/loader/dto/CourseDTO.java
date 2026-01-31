@@ -1,4 +1,4 @@
-package com.backend.courseplatform.dto;
+package com.backend.courseplatform.loader.dto;
 
 import lombok.Data;
 

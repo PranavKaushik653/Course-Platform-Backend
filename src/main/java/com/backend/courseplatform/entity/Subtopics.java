@@ -13,7 +13,7 @@ public class Subtopics {
 
     private String title;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "text")
     private String content; // markdown
 
     @ManyToOne(fetch = FetchType.LAZY)
