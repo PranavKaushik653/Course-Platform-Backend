@@ -3,13 +3,12 @@ package com.backend.courseplatform.loader.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
-public class CourseDTO {
+public class CourseResponseDTO {
     private String id;
     private String title;
     private String description;
-    private List<TopicsDTO> topics;
+    private long topicCount;
+    private long subtopicCount;
 }
