@@ -1,4 +1,4 @@
-package com.backend.courseplatform.loader.dto;
+package com.backend.courseplatform.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

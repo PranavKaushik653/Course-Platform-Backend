@@ -2,10 +2,10 @@ package com.backend.courseplatform.service;
 
 
 import com.backend.courseplatform.entity.Course;
-import com.backend.courseplatform.loader.dto.CourseDTO;
-import com.backend.courseplatform.loader.dto.CourseResponseDTO;
-import com.backend.courseplatform.loader.dto.SubtopicDTO;
-import com.backend.courseplatform.loader.dto.TopicsDTO;
+import com.backend.courseplatform.dto.CourseDTO;
+import com.backend.courseplatform.dto.CourseResponseDTO;
+import com.backend.courseplatform.dto.SubtopicDTO;
+import com.backend.courseplatform.dto.TopicsDTO;
 import com.backend.courseplatform.repository.CourseRepository;
 import lombok.Data;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.backend.courseplatform.controller;
 
-import com.backend.courseplatform.loader.dto.CourseResponseDTO;
+import com.backend.courseplatform.dto.CourseResponseDTO;
 import com.backend.courseplatform.repository.SearchService;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.GetMapping;

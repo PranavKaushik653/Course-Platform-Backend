@@ -1,6 +1,5 @@
-package com.backend.courseplatform.loader.dto;
+package com.backend.courseplatform.dto;
 
-import com.backend.courseplatform.entity.Topics;
 import lombok.Data;
 
 import java.util.List;

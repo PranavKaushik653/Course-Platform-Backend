@@ -1,7 +1,7 @@
 package com.backend.courseplatform.repository;
 
 import com.backend.courseplatform.entity.Course;
-import com.backend.courseplatform.loader.dto.CourseResponseDTO;
+import com.backend.courseplatform.dto.CourseResponseDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface CourseRepository extends JpaRepository<Course, String> {
     @Query("""
-    SELECT new com.backend.courseplatform.loader.dto.CourseResponseDTO(
+    SELECT new com.backend.courseplatform.dto.CourseResponseDTO(
                        c.id,
                        c.title,
                        c.description,
@@ -28,7 +28,7 @@ public interface CourseRepository extends JpaRepository<Course, String> {
     List<CourseResponseDTO> findCourseSummaries();
 
     @Query("""
-    SELECT DISTINCT new com.backend.courseplatform.loader.dto.CourseResponseDTO(
+    SELECT DISTINCT new com.backend.courseplatform.dto.CourseResponseDTO(
                        c.id,
                        c.title,
                        c.description,

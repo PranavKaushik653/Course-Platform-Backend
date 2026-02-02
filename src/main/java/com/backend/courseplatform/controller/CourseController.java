@@ -1,8 +1,7 @@
 package com.backend.courseplatform.controller;
 
-import com.backend.courseplatform.entity.Course;
-import com.backend.courseplatform.loader.dto.CourseDTO;
-import com.backend.courseplatform.loader.dto.CourseResponseDTO;
+import com.backend.courseplatform.dto.CourseDTO;
+import com.backend.courseplatform.dto.CourseResponseDTO;
 import com.backend.courseplatform.service.CourseService;
 import lombok.Data;
 import org.springframework.web.bind.annotation.GetMapping;
