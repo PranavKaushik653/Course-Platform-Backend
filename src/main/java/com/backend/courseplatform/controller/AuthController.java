@@ -1,5 +1,7 @@
 package com.backend.courseplatform.controller;
 
+import com.backend.courseplatform.dto.LoginRequestDTO;
+import com.backend.courseplatform.dto.LoginResponseDTO;
 import com.backend.courseplatform.dto.UserResponseDTO;
 import com.backend.courseplatform.entity.User;
 import com.backend.courseplatform.service.UserService;
@@ -26,5 +28,11 @@ public class AuthController {
         UserResponseDTO response=userService.register(request.getEmail(), request.getPassword());
 
         return new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO loginRequestDTO){
+        LoginResponseDTO response=userService.login(loginRequestDTO.getEmail(), loginRequestDTO.getPassword());
+        return ResponseEntity.ok(response);
     }
 }
