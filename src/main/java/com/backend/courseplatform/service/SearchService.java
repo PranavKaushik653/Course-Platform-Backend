@@ -1,6 +1,7 @@
-package com.backend.courseplatform.repository;
+package com.backend.courseplatform.service;
 
 import com.backend.courseplatform.dto.CourseResponseDTO;
+import com.backend.courseplatform.repository.CourseRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
