@@ -1,6 +1,10 @@
 # Course Platform Backend API
 
-Backend service for a learning platform built with Spring Boot 4.0.2 and Java 25.
+Backend service for a learning platform built with Spring Boot 4.0.2 and Java 21.
+
+## 🚀 Live Deployment
+https://course-platform-backend-production.up.railway.app
+
 
 ## 🚀 Features
 
@@ -13,7 +17,7 @@ Backend service for a learning platform built with Spring Boot 4.0.2 and Java 25
 
 ## 🛠️ Tech Stack
 
-- **Java:** 25
+- **Java:** 21
 - **Spring Boot:** 4.0.2
 - **Database:** PostgreSQL
 - **Security:** Spring Security with JWT
@@ -23,7 +27,7 @@ Backend service for a learning platform built with Spring Boot 4.0.2 and Java 25
 
 ## 📋 Prerequisites
 
-- Java 25
+- Java 21
 - PostgreSQL 18
 - Maven 3.8+
 
