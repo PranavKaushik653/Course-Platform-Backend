@@ -45,8 +45,6 @@ Desktop.ini
 .env.local
 .env.*.local
 
-### Application Config with Sensitive Info ###
-src/main/resources/application.properties
 
 ### Logs ###
 logs/
