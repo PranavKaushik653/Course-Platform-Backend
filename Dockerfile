@@ -1,4 +1,5 @@
-FROM openjdk:21-slim-bookworm
+# Use a more standard official image
+FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
 
