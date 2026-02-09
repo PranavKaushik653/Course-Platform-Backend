@@ -1,5 +1,5 @@
 package com.backend.courseplatform.service;
 
-public interface EnrollmentServcie {
+public interface EnrollmentService {
     void enroll (String courseId);
 }

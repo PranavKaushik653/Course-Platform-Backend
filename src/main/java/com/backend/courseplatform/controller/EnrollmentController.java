@@ -1,24 +1,27 @@
 package com.backend.courseplatform.controller;
 
-import com.backend.courseplatform.service.EnrollmentServcie;
-import lombok.Data;
+import com.backend.courseplatform.service.EnrollmentServiceImplementation;
+import com.backend.courseplatform.service.EnrollmentService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@Data
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/courses")
+@RequiredArgsConstructor
 public class EnrollmentController {
 
-    private final EnrollmentServcie enrollmentServcie;
+    private final EnrollmentService enrollmentService;
 
-    @PostMapping
-    public ResponseEntity<?> enroll(@PathVariable String courseId){
-        enrollmentServcie.enroll(courseId);
-        return ResponseEntity.ok(java.util.Map.of("message","Enrolled successfully")
+    @PostMapping("/{courseId}/enroll")
+    public ResponseEntity<Map<String, String>> enroll(
+            @PathVariable String courseId
+    ) {
+        enrollmentService.enroll(courseId);
+        return ResponseEntity.ok(
+                Map.of("message", "Enrolled successfully")
         );
     }
 }

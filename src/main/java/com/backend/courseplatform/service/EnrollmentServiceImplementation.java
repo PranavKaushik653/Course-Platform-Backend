@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @Service
 @Data
 //@AllArgsConstructor
-public class EnrollmentServiceImplementation implements EnrollmentServcie{
+public class EnrollmentServiceImplementation implements EnrollmentService{
     private final EnrollmentRepository enrollmentRepository;
     private final UserRepository userRepository;
     private final CourseRepository courseRepository;
